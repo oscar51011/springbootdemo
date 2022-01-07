@@ -10,11 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.dto.MessageDto;
 import com.demo.enumeration.QueueEnum;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 /**
  * 傳送Queue資訊的restful
  * @author oscar51011
  * @date 2022年1月7日
  */
+@Api(tags = "Rabbitmq Publisher服務")
 @RestController
 @RequestMapping("/messages")
 public class MessageController {
@@ -28,6 +32,7 @@ public class MessageController {
 	 * @param message
 	 * @return
 	 */
+	@ApiOperation(value ="發布訊息服務", notes="發布訊息服務")
 	@GetMapping("/{message}")
 	private String publishMessage(@PathVariable String message) {
 		
