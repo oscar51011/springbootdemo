@@ -1,1 +1,7 @@
-
+# rabbitmq server setting
+spring:
+  rabbitmq:
+    host: 172.29.189.174
+    port: 5672
+    username: guest
+    password: guest

@@ -8,7 +8,7 @@ import lombok.Data;
  * @date 2022年1月7日
  */
 @Data
-public class Message {
+public class MessageDto {
 	/**
 	 * 傳遞給queue的資訊
 	 */
