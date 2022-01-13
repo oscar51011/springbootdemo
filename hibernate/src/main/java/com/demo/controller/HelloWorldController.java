@@ -31,10 +31,8 @@ public class HelloWorldController {
 		
 		Person person = personDao.getPersonById(1L);
 		System.out.println(person.getUserName());
-		
-		Job job = jobDao.getJobById(1L);
-		System.out.println(job.getDescription());
-		
+		System.out.println(person.getJob().getDescription());
+
 		return "ok";
 	}
 }

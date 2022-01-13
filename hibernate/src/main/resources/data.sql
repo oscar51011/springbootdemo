@@ -1,7 +1,7 @@
 /**
  * add person
  */
-INSERT INTO PERSON(USERNAME, AGE)VALUES('test', 30);
+INSERT INTO PERSON(USERNAME, AGE, JOB_CODE)VALUES('test', 30, 1);
 /**
  * add job
  */

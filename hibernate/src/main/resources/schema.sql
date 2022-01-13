@@ -7,7 +7,8 @@
 CREATE TABLE PERSON(
 	ID int NOT NULL AUTO_INCREMENT,
 	USERNAME VARCHAR(50) NOT null,
-	AGE int(3) NOT null
+	AGE int(3) NOT null,
+	JOB_CODE int (100)NOT NULL
 );
 
 /**
