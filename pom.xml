@@ -38,5 +38,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>rabbitmq-publisher</module>
+		<module>hibernate</module>
 	</modules>
 </project>
