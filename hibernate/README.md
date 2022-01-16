@@ -11,3 +11,10 @@ Password:
 
 登入後即可看到在 /src/main/resources 底下預設的 data.sql & schema.sql 初始化的資料
 ```
+
+# TODO
+1. OID查詢(利用主鍵)
+2. QBC查詢(Query By Critieria API)
+3. HQL查詢(類似SQL寫法- annotation )
+3. HQL查詢(類似SQL寫法- xml )
+4. SQL查詢(寫原生SQL寫法 )
