@@ -17,10 +17,7 @@ public class Job {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
-	@Column(name = "JOB_CODE")
-	private Integer jobCode;
-	
+		
 	@Column(name = "DESCRIPTION")
 	private String description;
 }

@@ -28,9 +28,8 @@ public class Person {
 	private Integer age;
 	
 	/**
-	 * 多個人會是同一種職業
+	 * 多個使用者中，有相同的職業類別
 	 */
 	@ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name="JOB_CODE")
     private Job job;
 }
