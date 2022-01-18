@@ -6,4 +6,6 @@
 
 模組清單:
 
+- hibernate
 - rabbitmq-publisher
+- springmvc
