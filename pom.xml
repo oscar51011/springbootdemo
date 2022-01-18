@@ -39,5 +39,6 @@
 	<modules>
 		<module>rabbitmq-publisher</module>
 		<module>hibernate</module>
+		<module>springmvc</module>
 	</modules>
 </project>
