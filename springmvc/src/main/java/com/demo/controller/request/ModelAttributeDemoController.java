@@ -34,6 +34,7 @@ public class ModelAttributeDemoController {
 	 * @ModelAttribute 放在 method Level 的時候，會在 @RequestMapping 載入前，就被載入
 	 * 因此整個 class 的參數都會加上 msg 的參數， 因此就算沒有在 該 method 設定 addAttribute 也能夠吃到參數
 	 * 
+	 * 
 	 * 範例: http://localhost:8080/modelAttributeDemo/methodLevelAnnotation
 	 * 
 	 * @return
@@ -44,6 +45,14 @@ public class ModelAttributeDemoController {
 	}
 	
 	
+	/**
+	 * 初始化在 requestMapping 使用時
+	 * 
+	 * As a method-level annotation in @Controller or @ControllerAdvice classes that help 
+	 * to initialize the model prior to any @RequestMapping method invocation.
+	 * 
+	 * @param model
+	 */
 	@ModelAttribute
     public void addAttributes(Model model) {
         model.addAttribute("msg", "Welcome to the Netherlands!");

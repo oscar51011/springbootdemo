@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.dao.IJob;
 import com.demo.dao.IPersonDao;
-import com.demo.entity.Job;
 import com.demo.entity.Person;
 
 /**
