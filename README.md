@@ -9,3 +9,4 @@
 - hibernate
 - rabbitmq-publisher
 - springmvc
+- testing
