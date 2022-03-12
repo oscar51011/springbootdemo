@@ -26,6 +26,20 @@
     	<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-thymeleaf</artifactId>
 	</dependency>
+	
+	<!-- add custom properties -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-configuration-processor</artifactId>
+		<optional>true</optional>
+	</dependency>
+	
+	<!-- test framework -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
 
   </dependencies>
   
