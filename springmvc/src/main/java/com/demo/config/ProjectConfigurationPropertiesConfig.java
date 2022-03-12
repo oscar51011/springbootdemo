@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix = "project")
-@PropertySource("classpath:test.properties")
+@PropertySource("classpath:propertiesProject.properties")
 public class ProjectConfigurationPropertiesConfig {
 
 	private String parameter;

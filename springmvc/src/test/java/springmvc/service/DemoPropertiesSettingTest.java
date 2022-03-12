@@ -10,7 +10,7 @@ import com.demo.config.ProjectConfigurationPropertiesConfig;
 import com.demo.config.ProjectEnvConfig;
 
 @SpringBootTest(classes = {SpringMvcApplication.class})
-class DemoSettingTest {
+class DemoPropertiesSettingTest {
 	
 	@Autowired
 	private ProjectConfig projectConfig;
@@ -22,7 +22,7 @@ class DemoSettingTest {
 	private ProjectConfigurationPropertiesConfig projectConfigurationPropertiesConfig;
 	
 	@Test
-	void testSettingCase() {
+	void testPropertiesSettingCase() {
 		System.out.println("load @Value:" + projectConfig.getParameter());
 		System.out.println("load Enviroment interface:" + projectEnvConfig.getParameterValue());
 		System.out.println("load @ConfigurationProperties:" + projectConfigurationPropertiesConfig.getParameter());
