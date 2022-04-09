@@ -22,6 +22,11 @@ class JobMapperTest {
 	}
 	
 	@Test
+	void testGetByIdUseXml() {
+		System.out.println(jobMapper.getByIdUseXml(2L));
+	}
+	
+	@Test
 	void testGetAll() {
 		List<Job> jobs = jobMapper.getAll();
 		System.out.println(jobs);
