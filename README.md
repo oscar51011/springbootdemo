@@ -7,6 +7,7 @@
 模組清單:
 
 - hibernate
+- mybatis
 - rabbitmq-publisher
 - springmvc
 - testing
