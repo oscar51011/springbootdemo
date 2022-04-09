@@ -1,0 +1,18 @@
+/**
+ * 職業類別
+ */
+CREATE TABLE JOB(
+	ID int NOT NULL AUTO_INCREMENT,
+	DESCRIPTION VARCHAR(50) NOT null
+);
+
+/**
+ * 使用者資訊
+ */
+CREATE TABLE PERSON(
+	ID int NOT NULL AUTO_INCREMENT,
+	USERNAME VARCHAR(50) NOT null,
+	AGE int(3) NOT null,
+	JOB_ID INT NOT NULL,
+	FOREIGN KEY (JOB_ID) references JOB(ID)
+);

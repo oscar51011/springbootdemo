@@ -1,0 +1,10 @@
+/**
+ * add job
+ */
+INSERT INTO JOB(DESCRIPTION)VALUES('engineer');
+INSERT INTO JOB(DESCRIPTION)VALUES('doctor');
+
+/**
+ * add person
+ */
+INSERT INTO PERSON(USERNAME, AGE, JOB_ID)VALUES('test', 30, 1);
