@@ -1,6 +1,12 @@
+server:
+  port: 8081
+
 #H2 setting
 spring:
  h2:
     console:
       enabled: true
       path: /h2-console
+# 需要使session可以關閉      
+ jpa:
+  open-in-view: false

@@ -23,5 +23,10 @@ public class JobDaoImpl implements IJob {
 		Session currentSession = sessionFactory.getCurrentSession();
 		return currentSession.get(Job.class, id);
 	}
+	
+	public void addJob(Job job) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		currentSession.save(job);
+	}
 
 }
