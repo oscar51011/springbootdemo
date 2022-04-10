@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.dao.IJob;
-import com.demo.dao.IPersonDao;
-import com.demo.entity.Person;
+import com.demo.service.HelloWorldService;
 
 /**
  * 測試DAO功能運作
@@ -19,19 +17,14 @@ import com.demo.entity.Person;
 public class HelloWorldController {
 	
 	@Autowired
-	IPersonDao personDao;
+	private HelloWorldService service;
 	
-	@Autowired
-	IJob jobDao;
-
 	
 	@GetMapping("/test")
 	public String testDaoService() {
 		
-		Person person = personDao.getPersonById(1L);
-		System.out.println(person.getUserName());
-		System.out.println(person.getJob().getDescription());
-
+		service.testService();
+		
 		return "ok";
 	}
 }

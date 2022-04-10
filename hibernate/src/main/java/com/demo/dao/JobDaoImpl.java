@@ -1,9 +1,13 @@
 package com.demo.dao;
 
+import javax.persistence.EntityManagerFactory;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.demo.entity.Job;
 
@@ -13,10 +17,11 @@ import com.demo.entity.Job;
  * @date 2022年1月13日
  */
 @Repository
+@Transactional
 public class JobDaoImpl implements IJob {
 	
 	@Autowired
-    private SessionFactory sessionFactory;
+	private SessionFactory sessionFactory;
 
 	@Override
 	public Job getJobById(Long id) {
@@ -25,8 +30,8 @@ public class JobDaoImpl implements IJob {
 	}
 	
 	public void addJob(Job job) {
-		Session currentSession = sessionFactory.getCurrentSession();
-		currentSession.save(job);
+		Session session = sessionFactory.getCurrentSession();
+		session.save(job);
 	}
 
 }
