@@ -41,5 +41,6 @@
 		<module>hibernate</module>
 		<module>springmvc</module>
 		<module>testing</module>
+		<module>mybatis</module>
 	</modules>
 </project>
