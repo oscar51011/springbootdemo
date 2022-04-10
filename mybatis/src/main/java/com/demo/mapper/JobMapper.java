@@ -2,6 +2,7 @@ package com.demo.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
@@ -26,6 +27,9 @@ public interface JobMapper {
         @Result(property = "description", column = "DESCRIPTION")
     })
 	Job getById(Long id);
+	
+	@Insert("INSERT INTO JOB(ID, DESCRIPTION) VALUES(#{id}, #{description})")
+    void insert(Job job);
 	
 	@Update("UPDATE JOB SET DESCRIPTION=#{description} WHERE ID =#{id}")
     void update(Job job);
