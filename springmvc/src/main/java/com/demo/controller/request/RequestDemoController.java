@@ -38,11 +38,11 @@ public class RequestDemoController {
 	 */
 	@GetMapping("/getParam")
 	public ResponseEntity<String> getParam(
-			@RequestHeader("Accept-Language") String language,
+			//@RequestHeader("Accept-Language") String language,
 			@RequestParam("name") String name, 
 			@RequestParam("age") int age) {
 		
-		System.out.println("headerInfo - Accept-Language: " + language);
+		//System.out.println("headerInfo - Accept-Language: " + language);
 		
 		System.out.println("name: " + name + " ,age:" + age);
 		
