@@ -21,7 +21,7 @@ public class HelloWorldController {
 	
 	
 	@GetMapping("/test")
-	public String testDaoService() {
+	public String testDaoService() throws Exception {
 		
 		service.testService();
 		
