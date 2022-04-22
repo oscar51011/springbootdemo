@@ -10,4 +10,5 @@ import com.demo.entity.Job;
 public interface IJob {
 	Job getJobById(Long id);
 	void addJob(Job job);
+	void updateJob(Job job);
 }
