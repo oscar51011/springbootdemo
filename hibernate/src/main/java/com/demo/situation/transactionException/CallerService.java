@@ -24,7 +24,7 @@ public class CallerService {
 	
 	@Transactional
 	public void addJob() {
-		// insert sql
+
 		Job job = new Job();
 		job.setId(3L);
 		job.setDescription("test");

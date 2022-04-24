@@ -38,5 +38,6 @@ public class HelloWorldService {
 		params.put("age", 1);
 		params.put("name", "one");
 		String resp = restTemplate.getForObject("http://localhost:8080/requests/getParam?name={name}&age={age}", String.class, params);
+	
 	}
 }
