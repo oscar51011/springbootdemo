@@ -42,5 +42,6 @@
 		<module>springmvc</module>
 		<module>testing</module>
 		<module>mybatis</module>
+		<module>fileFormat</module>
 	</modules>
 </project>

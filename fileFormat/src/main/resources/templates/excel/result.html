@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>show Excel Result Page</title>
+</head>
+<body>
+      <p th:text="'上傳結果: ' + ${result} + '!'"/>
+      
+      <form method="GET" action="/excel/show">      
+      	<p>返回上傳頁:<input type="submit" value="返回"></p>
+      </form>
+</body>
+</html>
